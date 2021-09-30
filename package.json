@@ -1,5 +1,5 @@
 {
-	"name": "http2-wrapper",
+	"name": "@nsbcypher/http2-wrapper",
 	"version": "2.1.8",
 	"description": "HTTP2 client, just with the familiar `https` API",
 	"main": "source",
