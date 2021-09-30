@@ -1,6 +1,6 @@
 {
 	"name": "@nsbcypher/http2-wrapper",
-	"version": "2.1.8",
+	"version": "2.1.9",
 	"description": "HTTP2 client, just with the familiar `https` API",
 	"main": "source",
 	"types": "index.d.ts",
@@ -75,7 +75,10 @@
 					"allowTemplateLiterals": true
 				}
 			],
-			"operator-linebreak": ["error", "before"]
+			"operator-linebreak": [
+				"error",
+				"before"
+			]
 		}
 	}
 }
