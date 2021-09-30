@@ -396,7 +396,8 @@ class Agent extends EventEmitter {
 					const createConnection = computedOptions.createConnection || this.createConnection;
 
 					// A hacky workaround to enable async `createConnection`
-					socket = await createConnection.call(this, origin, computedOptions);
+					// socket = await createConnection.call(this, origin, computedOptions);
+					socket = await createConnection.call(this, computedOptions.servername ? new URL(origin.protocol + '//' + computedOptions.host + ':' + origin.port) : origin, computedOptions);
 					computedOptions.createConnection = () => socket;
 
 					const session = http2.connect(origin, computedOptions);
